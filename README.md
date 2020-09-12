@@ -1,8 +1,7 @@
 # General
-This script to get value in KeyVaul and setting up local environment for Service Principle Name in Azure Environment.
-** Getting value in KeyVaul of 
-AZURE_CLIENT_ID
-AZURE_CLIENT_SECRET
+This script to get values (AZURE_CLIENT_ID, AZURE_CLIENT_SECRET, AZURE_TENANT_ID) in KeyVaul and setting/unsetting up into local environment for Service Principle Name in Azure Environment.
+
+
 
 # Prerequisite
 - Azure Authentication to Suscription which has KeyVaul
