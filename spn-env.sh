@@ -23,6 +23,11 @@ AZURE_TENANT_ID=`az keyvault secret show --id $AZURE_TENANT_ID | jq -r '.value'`
 
 case $1 in
 set)
+  echo "Loging into Subscription"
+  az login
+  echo "=== Azure Login Identity ==="
+  az account show
+
   echo "Setting up SPN Environment"
   export AZURE_CLIENT_ID=$AZURE_CLIENT_ID
   export AZURE_CLIENT_SECRET=$AZURE_CLIENT_SECRET
